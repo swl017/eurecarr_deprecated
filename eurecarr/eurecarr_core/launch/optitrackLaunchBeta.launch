@@ -1,0 +1,13 @@
+<!-- Launches Mocap pose node and pose to odom node -->
+
+<launch>
+
+  <group ns="beta">
+    <node name="poseToOdom" pkg="eurecarr_core" type="poseToOdom.py" output="screen"/>
+    <include file="$(find eurecarr_core)/launch/MessageInterfaceJoyBChassis.launch" />
+    <include file="$(find frenet_w_autorally)/launch/frenet_c_controlBChassis.launch" />
+  </group>
+  <include file="$(find eurecarr_perception)/launch/obstructor_beta.launch" />
+
+
+</launch>

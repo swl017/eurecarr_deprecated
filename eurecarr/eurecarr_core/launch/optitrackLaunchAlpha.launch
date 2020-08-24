@@ -1,0 +1,14 @@
+<!-- Launches Mocap pose node and pose to odom node -->
+
+<launch>
+
+  <group ns="alpha">
+    <node name="poseToOdom" pkg="eurecarr_core" type="poseToOdom.py" output="screen"/>
+    <include file="$(find eurecarr_core)/launch/MessageInterfaceJoy.launch" />
+    <include file="$(find frenet_w_autorally)/launch/frenet_c_control.launch" />
+  </group>
+  <include file="$(find eurecarr_perception)/launch/obstructor_alpha.launch" />
+  <include file="$(find eurecarr_perception)/launch/trajectoryPrediction_alpha.launch" />
+
+
+</launch>

@@ -1,0 +1,15 @@
+<!-- Launches Arduino ROS serial and MessageInterface node -->
+
+<launch>
+
+  <!-- <include file="$(find autorally_core)/launch/hardware.machine" /> -->
+  <node name="MessageInterface" pkg="eurecarr_core" type="MessageInterface" output="screen" />
+    <param name="isOptitrack" value="true" />
+  <node name="arduino_serial_node" pkg="rosserial_arduino" type="serial_node.py" output="screen" >
+
+    <param name="port" value="/dev/ttyACM0" />
+    <!-- <param name="baud" value="115200" /> -->
+
+  </node>
+
+</launch>

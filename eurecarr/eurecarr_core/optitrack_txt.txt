@@ -1,0 +1,5 @@
+atan(l/r)=steer(deg), l=0.1(m), r=radius(m)
+steer=1.00=20.7 deg, radius=0.265 
+steer=0.50=12.5deg, radius=0.45
+steer=0.25=6.90deg, radius=0.825
+steer=0.15=4.57deg, radius=1.25

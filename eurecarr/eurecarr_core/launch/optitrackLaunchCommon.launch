@@ -1,0 +1,11 @@
+<!-- Launches Mocap pose node and pose to odom node -->
+
+<launch>
+
+  <include file="$(find vrpn_client_ros)/launch/sampleWired.launch" />
+  <include file="$(find autorally_control)/launch/mapVisualize.launch" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d /home/sw/.rviz/optitrackRviz.rviz" />	
+  <!-- <node name="poseToOdom" pkg="eurecarr_core" type="poseToOdom.py" output="screen" ns="beta"/> -->
+
+
+</launch>

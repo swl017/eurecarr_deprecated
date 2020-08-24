@@ -1,0 +1,9 @@
+
+<launch>
+
+  <node name="udp_client" pkg="mbzirc_ugv_udp_client" type="mbzirc_ugv_udp_client" output="screen" >
+    <remap from="pose_estimate" to="/beta/pose_estimate"/>
+
+  </node>
+
+</launch>
