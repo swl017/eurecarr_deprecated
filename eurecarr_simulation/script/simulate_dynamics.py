@@ -79,7 +79,7 @@ class SimulateStep(object):
         self.states_der = self.get_states_der(self.states, self.inputs)
         if self.toggle:
             self.states_der = np.zeros_like(self.states)
-            self.states     = np.zeros_like(self.states)
+            self.states     = self.states_init
         self.states     = self.states + self.states_der * self.dt
         self.state_hist  = np.append(self.state_hist, [self.states], axis=0)
         self.state_der_hist  = np.append(self.state_der_hist, [self.states_der], axis=0)
