@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/sw/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/sw/catkin_ws/src/autorally/autorally_control/include/**",
+                "/home/sw/catkin_ws/src/autorally/autorally_core/include/**",
+                "/home/sw/catkin_ws/src/eurecarr/eurecarr_core/include/**",
+                "/home/sw/catkin_ws/src/eurecarr/eurecarr_perception/include/**",
+                "/home/sw/catkin_ws/src/frenet_w_autorally/include/**",
+                "/home/sw/catkin_ws/src/laser_to_xy/include/**",
+                "/home/sw/catkin_ws/src/pointgrey_camera_driver/pointgrey_camera_driver/include/**",
+                "/home/sw/catkin_ws/src/ublox/ublox_gps/include/**",
+                "/home/sw/catkin_ws/src/ublox/ublox_msgs/include/**",
+                "/home/sw/catkin_ws/src/ublox/ublox_serialization/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

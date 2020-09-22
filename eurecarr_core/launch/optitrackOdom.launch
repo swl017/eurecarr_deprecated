@@ -1,0 +1,11 @@
+<!-- Launches Mocap pose node and pose to odom node -->
+
+<launch>
+
+  <include file="$(find vrpn_client_ros)/launch/sample.launch" />
+  <node name="poseToOdom" pkg="eurecarr_core" type="poseToOdom.py" output="screen" ns="alpha"/>
+  <!-- <node name="poseToOdom" pkg="eurecarr_core" type="poseToOdom.py" output="screen" ns="beta"/> -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d /home/sw/.rviz/optitrackRviz.rviz" />	
+
+
+</launch>

@@ -1,0 +1,10 @@
+<!-- Launches Mocap pose node and pose to odom node -->
+
+<launch>
+
+  <include file="$(find eurecarr_core)/launch/optitrackLaunchCommon.launch" />
+  <include file="$(find eurecarr_core)/launch/optitrackLaunchAlpha.launch" />
+  <include file="$(find eurecarr_core)/launch/optitrackLaunchBeta.launch" />
+  <node name="stanley_controller_rosBChassis" pkg="autorally_control" type="stanley_controller_rosBChassis.py" ns="beta"/>	
+
+</launch>

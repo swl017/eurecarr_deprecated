@@ -1,0 +1,17 @@
+<!-- Launches Arduino ROS serial and MessageInterface node -->
+
+<launch>
+
+  <include file="$(find autorally_control)/launch/joystickController.launch" />
+  <node name="MessageInterface" pkg="eurecarr_core" type="MessageInterface" output="screen" />
+    <param name="isOptitrack" value="true" />
+    <param name="isSteerInvert" value="false" />
+    <param name="isThrottleInvert" value="true" />
+  <node name="arduino_serial_node" pkg="rosserial_arduino" type="serial_node.py" output="screen" >
+    <param name="port" value="/dev/ttyACM0" />
+    <param name="baud" value="115200" />
+    <!-- <param name="baud" value="57600" /> -->
+  </node>
+  <node name="poseToOdom" pkg="eurecarr_core" type="poseToOdom.py" output="screen" />
+
+</launch>

@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/sw/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/sw/catkin_ws/src/autorally/autorally_control/include/**",
+        "/home/sw/catkin_ws/src/autorally/autorally_core/include/**",
+        "/home/sw/catkin_ws/src/eurecarr/eurecarr_core/include/**",
+        "/home/sw/catkin_ws/src/eurecarr/eurecarr_perception/include/**",
+        "/home/sw/catkin_ws/src/eurecarr/eurecarr_simulation/include/**",
+        "/home/sw/catkin_ws/src/frenet_w_autorally/include/**",
+        "/opt/ros/melodic/share/julius/include/**",
+        "/home/sw/catkin_ws/src/laser_to_xy/include/**",
+        "/home/sw/catkin_ws/src/navigation/map_server/include/**",
+        "/home/sw/catkin_ws/src/UDP/mbzirc_ugv_udp_client/include/**",
+        "/home/sw/catkin_ws/src/UDP/mbzirc_ugv_udp_server/include/**",
+        "/home/sw/catkin_ws/src/mocap_optitrack/include/**",
+        "/home/sw/catkin_ws/src/ublox/ublox_gps/include/**",
+        "/home/sw/catkin_ws/src/ublox/ublox_msgs/include/**",
+        "/home/sw/catkin_ws/src/ublox/ublox_serialization/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
